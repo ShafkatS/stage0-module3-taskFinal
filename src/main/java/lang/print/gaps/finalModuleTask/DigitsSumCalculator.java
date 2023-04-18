@@ -2,21 +2,13 @@ package lang.print.gaps.finalModuleTask;
 
 public class DigitsSumCalculator {
     public void calculateSum(int number) {
-        String sumNumbers1 = String.valueOf(number);
-            char extractSimbol1 = sumNumbers1.charAt(0);
-            String valueSimbol1 = String.valueOf(extractSimbol1);
-            int sumSimbol1 = Integer.parseInt(valueSimbol1);
-            String sumNumbers2 = String.valueOf(number);
-            char extractSimbol2 = sumNumbers2.charAt(1);
-            String valueSimbol2 = String.valueOf(extractSimbol1);
-            int sumSimbol2 = Integer.parseInt(valueSimbol1);
-            char extractSimbol3 = sumNumbers2.charAt(2);
-            String valueSimbol3 = String.valueOf(extractSimbol1);
-            int sumSimbol3 = Integer.parseInt(valueSimbol1);
-            char extractSimbol4 = sumNumbers2.charAt(3);
-            String valueSimbol4 = String.valueOf(extractSimbol1);
-            int sumSimbol4 = Integer.parseInt(valueSimbol1);
-            int sumSimbol5 = sumSimbol1 + sumSimbol2 + sumSimbol3 + sumSimbol4;
-            System.out.println(sumSimbol5);
+        int sum=0;
+        int oneD, twoD, threeD, fourD;
+        oneD = number/1000;
+        twoD = (number%1000)/100;
+        threeD = (number%100)/10;
+        fourD = number%10;
+        sum=oneD+twoD+threeD+fourD;
+        System.out.println(sum);
     }
 }
